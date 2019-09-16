@@ -1,0 +1,21 @@
+
+<style>
+h1 {color:black; margin-left: 25px; margin-top: 0px;}
+p {color:black; margin-left: 25px; vertical-align: top;}
+img {margin-left: 50px;}
+div {vertical-align: top; margin-bottom: 25px;}
+</style>
+
+<div style="width: 500px; background-color: #eee; padding-top: 10px; margin-top: 20px">
+    <h1>{{ city.name }}</h1>
+    <div style="display: inline-block">
+        <p>Temperatue (Average): {{ city.main.temp }}</p>
+        <p>Temperatue (Max): {{ city.main.temp_max }}</p>
+        <p>Temperatue (Min): {{ city.main.temp_min }}</p>
+        <p>Humidity: {{ city.main.humidity }}</p>
+        <p>Status: {{ city.weather[0].description }}</p>
+    </div>
+    <div style="display: inline-block">
+        <img style="width: 200px" src="https://images.pexels.com/photos/45182/dallas-texas-skyline-dusk-45182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    </div>
+</div>
